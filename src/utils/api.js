@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { getCookie } from './cookies';
+import { API_BASE_URL } from '../constants'
 
-const host = 'https://localhost:3000/api/v1';
+const host = API_BASE_URL
 
 const createApiUrl = pathArr => `${host}/${pathArr.join('/')}`;
 
