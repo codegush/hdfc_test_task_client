@@ -120,9 +120,9 @@ export const createSession = user => dispatch => {
       const { data } = response
       const { token } = data
       setCookie('token', token);
+      dispatch(push('/profile'));
       api.setAuthToken(token);
       dispatch(loginSuccess());
-      dispatch(push('/profile'));
     })
     .catch(errors => {
       console.log('login failed')
