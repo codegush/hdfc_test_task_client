@@ -1,5 +1,4 @@
-export const API_BASE_URL = 'https://hdfcapi.herokuapp.com/api/v1';
-// export const API_BASE_URL = 'https://localhost:3000/api/v1';
+export const API_BASE_URL = process.env.NODE_ENV === 'production' ? 'https://hdfcapi.herokuapp.com/api/v1' : 'https://localhost:3000/api/v1';
 
 export const GOOGLE_AUTH_PATH = '/auth/google_oauth2';
 export const FACEBOOK_AUTH_PATH = '/auth/facebook';
