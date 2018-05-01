@@ -2,9 +2,16 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import RaisedButton from 'material-ui/RaisedButton'
-import { Github, Google, Facebook, Instagram, LinkedIn, Twitter } from '../../components/Icons'
-import './Login.css'
 import { requestLogin } from '../../reducers/session'
+import {
+  Github,
+  Google,
+  Facebook,
+  Instagram,
+  LinkedIn,
+  Twitter
+} from '../../components/Icons'
+import './Login.css'
 import {
   API_BASE_URL,
   GOOGLE_AUTH_PATH,
