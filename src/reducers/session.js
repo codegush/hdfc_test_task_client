@@ -124,8 +124,10 @@ export const createSession = user => dispatch => {
       api.setAuthToken(token);
       dispatch(loginSuccess());
     })
-    .catch(errors => {
-      console.log('login failed')
+    .catch(res => {
+      const { response: { data = {}}} = res
+      const { errors = [] } = data
+      dispatch(logoutFailed(errors[0]))
     })
 }
 

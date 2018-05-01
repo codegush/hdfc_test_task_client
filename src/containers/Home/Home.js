@@ -40,7 +40,7 @@ class Home extends Component {
   
   render() {
     const { showSignIn, showSignUp } = this.state;
-    const { user } = this.props
+    const { user, session } = this.props
     return (
       <div className={`container-fluid ${styles.auth}`}>
         <div className={styles.socialAuth}>
@@ -67,6 +67,7 @@ class Home extends Component {
               <SignIn
                 onSignIn={this.onSignIn}
                 clickToSignUp={() => this.toggleSignUp()}
+                session={session}
               />
           }
         </div>

@@ -43,7 +43,8 @@ class SignIn extends Component {
 
   render() {
     const { email, password, showError, showSuccess, errorText = 'Please fill or correct all the fields' } = this.state;
-    const { clickToSignUp } = this.props
+    const { clickToSignUp, session } = this.props
+    const { error = {} } = session
     return (
       <Card
         style={{ width: '325px' }}
@@ -70,7 +71,7 @@ class SignIn extends Component {
           /><br />
           <div className={styles.errorText}>
             {
-              showError ? errorText : null
+              !!error.detail ? error.detail : null
             }
           </div>
           <div className={styles.successText}>
