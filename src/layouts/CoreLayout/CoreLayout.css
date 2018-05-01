@@ -1,0 +1,16 @@
+
+.fluidContainer {
+	width: 100%;
+}
+
+.header {
+	display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  height: 72px;
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+

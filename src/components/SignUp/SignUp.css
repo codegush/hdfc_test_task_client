@@ -1,0 +1,13 @@
+.errorText {
+	color: red;
+}
+
+.successText {
+	color: green;
+}
+
+.signInLink {
+	text-decoration: underline;
+	cursor: pointer;
+	color: blue;
+}

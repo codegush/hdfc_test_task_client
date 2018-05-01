@@ -1,0 +1,10 @@
+.register-now {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.signUpLink {
+	text-decoration: underline;
+	cursor: pointer;
+	color: blue;
+}

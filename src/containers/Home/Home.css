@@ -1,0 +1,16 @@
+.auth {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.socialAuth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.loginHeading {
+	opacity: 0.6
+}
